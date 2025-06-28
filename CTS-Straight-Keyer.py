@@ -1,3 +1,21 @@
+# ------------------------------------------------------------
+# CTS-Straight-Keyer.py
+#
+# RS-232のCTS信号を縦振れキー入力として利用し、
+# パドルを押している間だけサイドトーンをPCのスピーカーから出力するCWキーヤーです。
+#
+# ・CTS端子にスイッチ（縦振れキー）を接続し、GNDに落とすことでトーンが鳴ります。
+# ・音はsounddeviceライブラリを使ってリアルタイムに生成され、
+#   位相を連続的に保持することで滑らかなCWトーンを実現しています。
+# ・サンプリング周波数やトーン周波数はスクリプト内で変更可能です。
+#
+# 動作環境：
+#   - Python 3.x
+#   - pip install sounddevice numpy pyserial
+#   - Windows/Linux対応（COMポートは適宜変更）
+#
+# 作成者: 7M4MON
+
 import serial
 import time
 import numpy as np
