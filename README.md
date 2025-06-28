@@ -16,7 +16,7 @@ A straight key implementation using the **CTS** line:
 - Designed for traditional "up/down" straight key operation.
 - Uses real-time waveform synthesis with phase continuity for clean audio.
 
-### `CTSTSR-Paddle-Keyer.py`
+### `CTSDSR-Paddle-Keyer.py`
 
 An **Iambic A paddle keyer** using:
 
